@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/**
+* Подключение шрифтов локально из папки "./src/fonts"
+*/
+@import url("https://fonts.cdnfonts.com/css/pf-handbook-pro");
+@media screen and (min-width: 960px) {
+  header {
+    background: url("../../images/bg-head.png") no-repeat;
+    background-size: 100% auto;
+    height: 884px;
+  }
+  .header__button {
+    margin-top: 42px;
+  }
+}
+.header__head {
+  font-weight: 100;
+}
+
+@media screen and (min-width: 1280px) {
+  .header__head {
+    font-size: 72px;
+    margin-top: 147px;
+  }
+  .header__tittle {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header__boxesimg {
+    width: 428px;
+    position: relative;
+    top: 150px;
+  }
+}
+.header-navigation {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(5px);
+}
+.header__search {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  font-size: 0;
+  cursor: pointer;
+  background: url("../../images/search.svg") no-repeat center;
+  background-size: cover;
+}
+
+nav {
+  padding: 0 !important;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.navbar-brand img {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 960px) {
+  .navbar-brand img {
+    width: 147px;
+  }
+  .navbar-collapse {
+    max-width: 717px !important;
+  }
+  .header__search {
+    margin-left: auto;
+  }
+  .header__phone {
+    margin-left: auto;
+  }
+  .navbar-nav {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header-navigation {
+    padding: 34px 0px;
+  }
+  .header__phone {
+    font-size: 24px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
+.about-list__item {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.about-list__item::before {
+  content: "";
+  width: 1px;
+  border-left: 1px dotted black;
+  text-align: center;
+  position: absolute;
+}
+.about-list__item:last-child::before {
+  height: 0;
+}
+.about-list__img {
+  position: relative;
+}
+
+@media screen and (min-width: 960px) {
+  .about {
+    padding: 100px 0px;
+  }
+  .about-list__item::before {
+    height: 70px;
+    left: 40px;
+    top: 90px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .about__tittle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 120px;
+  }
+  .about-list {
+    margin-top: 42px;
+  }
+  .about-list__item {
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 87px;
+  }
+  .about-list__item:first-child {
+    margin-top: 0;
+  }
+  .about-list__img {
+    margin-right: 44px;
+  }
+  .about__description {
+    font-size: 21px;
+    margin-top: 18px;
+  }
+  .about__button {
+    margin-top: 40px;
+    padding: 18px 33px !important;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .catalog__information {
+    margin: 64px 0px;
+  }
+  .catalog__head {
+    font-size: 48px;
+    margin: 24px 0px;
+  }
+  .catalog__text {
+    font-size: 22px;
+  }
+  .catalog__button {
+    width: 164px;
+  }
+}
+@media screen and (min-width: 798px) {
+  .catalog-items {
+    margin-left: auto;
+    box-sizing: content-box;
+  }
+  .catalog__button {
+    padding: 14px 33px;
+  }
+}
+.catalog__head {
+  font-weight: 700;
+}
+.catalog__button {
+  border: 1px solid #333;
+}
+.catalog__item {
+  position: relative;
+  position: relative;
+}
+.catalog__item::before {
+  content: "";
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.catalog__item:nth-child(1)::before {
+  background: #A3E07E;
+}
+.catalog__item:nth-child(2)::before {
+  background: #FDED84;
+}
+.catalog__item:nth-child(3)::before {
+  background: #FF9CCA;
+}
+.catalog__item:nth-child(4)::before {
+  background: #FDB96B;
+}
+.catalog__image {
+  position: relative;
+  top: 37px;
+}
+.catalog .catalog__item:nth-child(3) .catalog__image {
+  top: 20px;
+  right: 50px;
+}
+
+.news__date {
+  color: #71BD44;
+  display: inline-block;
+}
+.news__date, .news__name {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 960px) {
+  .news {
+    background: url("../../images/newsbg.png") no-repeat right;
+    padding: 100px 0px;
+  }
+  .news__description {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .news__description {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .news__list {
+    margin-top: 48px;
+  }
+}
+@media screen and (min-width: 798px) {
+  .specialist-items {
+    width: 90%;
+    margin-left: auto;
+    box-sizing: content-box;
+  }
+  .specialist-items__left, .specialist-items__right {
+    width: 50%;
+  }
+  .specialist-items__left {
+    padding: 61px 83px;
+  }
+  .specialist-items__item:nth-child(1), .specialist-items__item:nth-child(2) {
+    height: 360px;
+    padding: 0px 81px;
+  }
+}
+.specialist-items {
+  background: #96E9F9;
+}
+.specialist-items__item:nth-child(1) {
+  background: #A3E07E;
+}
+.specialist-items__item:nth-child(2) {
+  background: #FDED84;
+}
+.specialist__button {
+  padding: 14px 33px;
+  border: 1px solid #333;
+}
+.specialist__item {
+  padding-left: 5.3%;
+  padding-right: 13.3%;
+}
+
+@media screen and (min-width: 1280px) {
+  .specialist__bottom {
+    padding-top: 72px;
+  }
+}
+body, a {
+  color: #333 !important;
+  font-weight: 300;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "PF Handbook Pro", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+button:hover, button:focus {
+  outline: none;
+}
+
+.button {
+  display: block;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+}
+.button-pink {
+  background: #EF4D9C;
+  color: #fff !important;
+  padding: 14px 33px;
+  width: 155px;
+}
+
+.section-head {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1500px;
+  }
+  .button-pink {
+    width: 186px;
+  }
+  .section-head {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+.section__date {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1280px) {
+  .section__name {
+    font-size: 32px;
+    padding: 16px 0px;
+  }
+  .section__date {
+    font-size: 18px;
+    padding-top: 36px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .section__date {
+    font-size: 14px;
+  }
+  .section__name {
+    font-size: 24px;
+  }
+}
