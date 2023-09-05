@@ -305,6 +305,34 @@ nav {
     padding-top: 72px;
   }
 }
+@media screen and (min-width: 960px) {
+  .slidecompanies {
+    padding: 109px 0px;
+  }
+  .slidecompanies__item {
+    width: 278px;
+    height: 186px;
+    margin: 0 10px;
+  }
+}
+.slidecompanies {
+  background: #F8F8F8;
+}
+.slidecompanies__item {
+  background: #fff;
+  position: relative;
+}
+.slidecompanies__item img {
+  margin: 0;
+  position: absolute; /* 2 */
+  top: 50%; /* 3 */
+  transform: translate(0, -50%);
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body, a {
   color: #333 !important;
   font-weight: 300;
